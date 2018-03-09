@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*公共样式设置*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cl{
+    clear: both;
+}
+.col_red{
+    color: red;
+}
+.inner_center{
+    width: 1210px;
+    margin: 0 auto;
+}
+
+/*头部样式设置开始*/
+.header{
+    background-color: #f1f1f1;
+    height: 30px;
+}
+.header .select{
+    padding-left: 10px;
+    padding-right: 20px;
+    line-height: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.header .nav{
+
+}
+.header .nav li{
+    float: left;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.header .nav li.line{
+    width: 1px;
+    height: 12px;
+    background-color: #ddd;
+    padding: 0;
+    margin-top: 9px;
+}
+.header .nav .select{
+    padding-right: 20px;
+}
+.header .nav li.mobile{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left:25px;
+}
+.header .nav li.mobile .mob_img{
+    width: 15px;
+    height: 20px;
+    background: url("../images/sprite.png") no-repeat 0 0;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+}
+/*尖角样式设置开始*/
+.header .select i{
+    height: 6px;
+    width:12px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 5px;
+
+}
+.header .select i span{
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>网页框架</title>
+</head>
+<style type="text/css">
+	body div{
+		margin:0;
+		padding: 0;
+	}
+	.blank-10{
+		clear: both;
+	}
+	.header{
+		margin: 0 auto;
+		width: 970px;
+		/*height: 103px;*/
+	}
+	.header .header-left{
+		width: 277px;
+		height: 103px;
+		float: left;
+		background-color: red;
+	}
+	.header .header-nav{
+		margin-top: 8px;
+		width: 679px;
+		height: 46px;
+		float: right;
+		background-color: yellowgreen;
+	}
+	.header .header-date{
+		width: 137px;
+		height: 49px;
+		float: right;
+		background-color: yellowgreen;
+	}
+	.content{
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 970px;
+		height: 435px;
+	}
+	.content .left-side{
+		width: 310px;
+		height: 435px;
+		float: left;
+		background-color: yellow;
+	}
+	.content .right-details{
+		width: 650px;
+		/*height: 435px;*/
+		float: right;
+	}
+	.content .right-details .right-top{
+		width: 650px;
+		/*height: 400px;*/
+	}
+	.content .right-details .right-bottom{
+		width: 650px;
+		height: 25px;
+		margin-top: 10px;
+		background-color: green;
+	}
+	.content .right-details .right-top .news{
+		width: 450px;
+		/*height: 400px;*/
+		float: left;
+	}
+	.content .right-details .right-top .banner{
+		width: 190px;
+		height: 400px;
+		float: right;
+		background-color: pink;
+	}
+	.content .right-details .news1{
+		width: 450px;
+		height: 240px;
+		background-color: cyan;
+	}
+	.content .right-details .news2{
+		width: 450px;
+		height: 110px;
+		margin-top: 10px;
+		background-color: cyan;
+	}
+	.content .right-details .news3{
+		width: 450px;
+		height: 30px;
+		margin-top: 10px;
+		background-color: cyan;
+	}
+	.footer{
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 970px;
+		height: 35px;
+		background-color: red;
+	}
+	.header-nav .nav1{
+		width: 80px;
+		height: 50px;
+	}
+	.header-nav .nav1-logo{
+		width: 0;
+		height: 0;
+		float: right;
+		margin-top: 9px;
+		border: 8px solid yellowgreen;
+		border-top-color: gray;
+		border-bottom: none;
+	}
+</style>
+<body>
+	<div class="header">
+		<div class="header-left">logo</div>
+		<div class="header-date">时间</div>
+		<div class="header-nav">
+			<div class="nav1"><span>服务项目</span>
+				<div class="nav1-logo"></div>
+			</div>
+		</div>
+		<div class="blank-10"></div>
+	</div>
+	<div class="content">
+		<div class="left-side">left-side</div>
+		<div class="right-details">
+			<div class="right-top">
+				<div class="news">
+					<div class="news1">news1</div>
+					<div class="news2">news2</div>
+					<div class="news3">news3</div>
+				</div>
+				<div class="banner">banner</div>
+				<div class="blank-10"></div>			
+			</div>
+			<div class="right-bottom">right-bottom</div>
+		</div>
+	</div>
+	<div class="footer">footer</div>
+</body>
+</html>

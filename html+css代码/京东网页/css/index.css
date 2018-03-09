@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+/*公共样式表*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cl{
+    clear: both;
+}
+.col_red{
+    color: red;
+}
+.inner_center{
+    width: 1210px;
+    margin: 0 auto;
+}
+/*模态视图样式设置*/
+#mask{
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:999;
+}
+#login_up{
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+    display: none;
+    position: fixed;
+    left:50%;
+    top: 50%;
+    margin: -125px 0 0 -200px;
+    z-index:1000;
+}
+#login_up #close_mask{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /*cursor: pointer;*/
+}
+/*头部导航样式设置开始*/
+.header{
+    background-color: #f1f1f1;
+    /*overflow: hidden;*/
+    height: 30px;
+}
+.header .inner_center{
+    /*由于染加载造成的bug 最好加高 用overflow也会有bug*/
+    background-color: #f1f1f1;
+    height: 30px;
+}
+.header .select{
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.header .nav{
+
+}
+.header .nav li{
+    float: left;
+    padding:0 10px;
+}
+.header .nav li a{
+    line-height:30px;
+}
+.header .nav li.line{
+    width: 1px;
+    height: 12px;
+    background-color: #ddd;
+    padding: 0;
+    margin-top: 9px;
+}
+.header .nav .select{
+    padding-right: 25px;
+}
+.header .nav .mobile{
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.header .nav .mobile .mob_img{
+    width: 15px;
+    height: 20px;
+    background: url("../images/sprite.png") no-repeat 0 0;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+}
+/*尖角样式设置开始*/
+.header .select i{
+    height: 6px;
+    width: 12px;
+    overflow: hidden;
+    position: absolute;
+    top: 13px;
+    right: 5px;
+}
+.header .select i span{
+    line-height: 12px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+/*头部导航样式设置结束*/
+
+/*top-banner设置开始*/
+.banner{
+    background-color: #8b25c6;
+}
+.banner .top_b{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.banner .top_b #close_banner{
+    width: 19px;
+    height: 19px;
+    display: block;
+    background: url("../images/close.png") no-repeat 0 0;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.banner .top_b #close_banner:hover{
+    background: url("../images/close.png") no-repeat 0 bottom;
+}
+/*top_banner设置结束*/
+
+/*功能区设置开始*/
+.func{
+    margin-top: 25px;
+    /*overflow: hidden;*/
+    /*加了这条会截断某些内容 用内墙法加高*/
+}
+.func .logo{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 92px;
+}
+.func .logo h1{
+
+}
+.func .logo h1 a{
+    display: block;
+    text-indent: -999em;
+    width: 270px;
+    height: 60px;
+    background: url("../images/logo.png") no-repeat;
+}
+.func .logo img.dong{
+    position: absolute;
+    top: -16px;
+    left: 168px;
+}
+.func .search{
+
+}
+.func .search .text{
+    border: 2px solid #9f2728;
+    border-right:none;
+    width: 444px;
+    height: 32px;
+    float: left;
+    padding-left: 6px;
+}
+.func .search .button{
+    width: 80px;
+    height: 36px;
+    background-color: #9f2728;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Microsoft YaHei";
+    float: left;
+    color: #eee;
+    cursor: pointer;
+}
+.func .search ul{
+    float: left;
+    /*不设置这个会受到上面的浮动的影响 没有直接表现出来是因为字围效果*/
+}
+.func .search li{
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.func .cart{
+    margin-left: 105px;
+    width: 110px;
+    height: 14px;
+    padding: 10px 18px;
+    padding-right: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #dfdfdf;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.func .cart .cart_img{
+    float: left;
+    width: 18px;
+    height: 16px;
+    background: url("../images/sprite.png") no-repeat 0 -92px;
+    margin-right: 8px;
+}
+.func .cart a{
+    float: left;
+    line-height: 14px;
+}
+.func .cart .num{
+    height: 14px;
+    width: 16px;
+    background-color: #C81623;
+    line-height: 14px;
+    position: absolute;
+    top: -4px;
+    left: 105px;
+    text-align: center;
+    color: #fff;
+    border-radius: 7px 7px 7px 0;
+}
+.func .cart .arrow_r{
+    float: right;
+    line-height: 14px;
+    font-size: 14px;
+    font-family:SimSun;
+}
+/*功能区样式设置结束*/
+
+/*子站导航样式设置开始*/
+.son_nav{
+    margin-top: 15px;
+    overflow: hidden;
+    border-bottom: 2px solid #b1191a;
+}
+.son_nav .product{
+    width: 200px;
+    padding-left: 10px;
+    background-color: #b1191a;
+}
+.son_nav .product a{
+    font:400 15px/44px "microsoft yahei";
+    color: #ffffff;
+}
+.son_nav .sons li{
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.son_nav .sons li a{
+    font:400 16px/44px "microsoft yahei";
+    color: #3a3a3a;
+}
+/*子导航设置结束*/
+
+/*main区域设置开始*/
+/*product_list区域设置开始*/
+.main{
+
+}
+.main .product_list ul li{
+    width: 189px;
+    height: 31px;
+    padding: 0 10px;
+    background-color: #c81622;
+    color: #ffffff;
+    border-left: 1px solid #b6161d;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.main .product_list ul li:hover{
+    overflow: visible;
+    background-color: #fff;
+    color: red;
+}
+.main .product_list ul li .item a{
+    float: left;
+    color: inherit;
+    font:400 14px/31px "microsoft yahei";
+}
+.main .product_list ul li span{
+    float: right;
+    color: #ffffff;
+    font:400 10px/31px "simsun";
+}
+.main .product_list ul li .detail{
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    position: absolute;
+    top: 0;
+    left: 209px;
+}
+/*product_list设置结束*/
+/*轮播图设置开始*/
+.main .slider {
+    width: 730px;
+    margin:12px 0 0 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.main .slider .arrow{
+    width: 730px;
+    position: absolute;
+    top:50%;
+    left: 0;
+    margin-top: -31px;
+    font:500 18px/62px "simsun";
+}
+.main .slider .arrow_l{
+    float: left;
+    width: 27px;
+    height: 62px;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.2);
+}
+.main .slider .arrow_r{
+    float: right;
+    width: 27px;
+    height: 62px;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.2);
+    text-align: right;
+}
+.main .slider .circles{
+    position: absolute;
+    bottom:8px;
+    left:50%;
+    margin-left: -66px;
+}
+.main .slider .circles li{
+    margin:0 2px;
+    float: left;
+}
+.main .slider .circles li a{
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    background-color: #3e3e3e;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+}
+/*轮播图区域设置结束*/
+
+/*信息区域设置开始*/
+.main .info{
+    width: 248px;
+    height: 451px;
+    border:1px solid #e4e4e4;
+    overflow: hidden;
+    margin-top: 12px;
+}
+.main .info .news .dt{
+    overflow: hidden;
+    padding:0 15px;
+    border-bottom:1px dotted #e4e4e4;
+}
+.main .info .news .dt h3{
+    float: left;
+    font:900 16px/43px "microsoft yahei";
+}
+.main .info .news .dt a{
+    float: right;
+    font:400 13px/43px "microsoft yahei";
+}
+.main .info .news .dd{
+    margin-top: 8px;
+    padding:0 15px 8px;
+    border-bottom:1px dashed #e4e4e4;
+}
+.main .info .news .dd li{
+    line-height: 28px;
+}
+.main .info .news .dd li span{
+    font-weight:bold;
+}
+.main .info .service{
+    width: 248px;
+    height: 251px;
+}
+.main .info .service .dt{
+    padding:0 15px;
+}
+.main .info .service .dt h3{
+    font:400 14px/42px "microsoft yahei";
+}
+.main .info .service .dd{
+    width: 252px;
+}
+.main .info .service .dd li{
+    float: left;
+    border:1px solid #e4e4e4;
+    border-left:none;
+    border-bottom:none;
+}
+.main .info .service .dd li a{
+    display: block;
+    width: 62px;
+    height: 70px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.main .info .service .dd li a i{
+    width: 25px;
+    height: 25px;
+    background: url("../images/icon_lifeserv.png") no-repeat -25px 0;
+    position: absolute;
+    top: 13px;
+    left: 19px;
+}
+.main .info .service .dd li a span{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -12px;
+}
+
