@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		自动获得焦点：<input type="text" id="txt1"  />
+		鼠标经过获得焦点：<input type="text" id="txt2" />
+	</div>
+	<script>
+		var txt1 = document.getElementById("txt1");
+		var txt2 = document.getElementById("txt2");
+		txt1.focus();
+		txt2.onmouseover = function(){
+			txt2.select();
+		}
+		
+	</script>
+</body>
+</html>

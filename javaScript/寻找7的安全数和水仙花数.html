@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 安全数 找出1-60中含有7以及7的倍数的数
+		/*for(var i = 1; i <= 60; i++){
+			var ge = i % 10;
+			var shi = parseInt(i / 10);
+			if(ge == 7 || shi == 7 || i % 7 == 0){
+				console.log(i);
+			}
+		}*/
+
+		// 水仙花数 特殊的三位数 每个位数的立方和等于它本身
+		var ge, shi, bai, sum;
+		for (var i = 100; i < 1000; i++) {
+			ge = i % 10;
+			shi = (parseInt(i / 10)) % 10;
+			bai = parseInt(i / 100);
+			sum = Math.pow(ge,3) + Math.pow(shi,3) + Math.pow(bai,3);
+			if (sum == i) {
+				console.log(i + "是水仙花数");
+			}
+		}
+		
+	</script>
+</body>
+</html>

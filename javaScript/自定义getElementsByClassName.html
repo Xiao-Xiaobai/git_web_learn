@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="name1">
+    <p class="name1 name2"></p>
+    <p class="name1 name2 name3"></p>
+</div>
+<script>
+    function getElementsByClassName(node,clsName) {
+        if(node.getElementsByClassName){
+            //ie 6 7 8 不支持 需要执行else
+            return node.getElementsByClassName(clsName);
+        } else{
+            var results = new Array(); //存放找到的元素
+            var elms = document.getElementsByTagName("*"); //找到所有的标签
+            for(var i = 0; i < elms.length; i++){
+                if(elms[i].className.indexOf(clsName) != -1){
+                    //elms[i].className 是一个数组，在该数组中找clsName
+                    // ==-1为找不到 ; !=-1即为找到
+                    //找到后存入results[]中 刚开始length为0，添加一个后length变为1，以此类推
+                    //或者可以用 results.push(elms[i]); 来存入
+                    results[results.length] = elms[i];
+                }
+            }
+            return results;
+        }
+    }
+
+    getElementsByClassName(document,"name1");
+//    console.log(getElementsByClassName(document,"name1"));
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*小猴子第一天摘下若干桃子，当即吃掉一半，又多吃一个，第二天又将剩下的桃子吃掉一半，又多吃一个，以后每天吃前一天剩下的一半加一个，到第十天吃的时候发现，只剩下一个桃子，问第一天猴子摘到多少桃子？*/
+		function peach(d){
+			if(n == 10){
+				return 1;
+			} else{
+				return 2 * (peach(d + 1) + 1);
+			}
+		}
+		console.log(peach(1));
+	</script>
+</body>
+</html>
